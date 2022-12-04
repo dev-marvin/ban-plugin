@@ -1,0 +1,60 @@
+history:
+  title: 'Ban History of {player}'
+  rows: 5
+  layout:
+    - 'XXXXXXXXX'
+    - 'XXOOOOOXX'
+    - '<XOOOOOX>'
+    - 'XXOOOOOXX'
+    - 'XXXXXXXXX'
+  items:
+    next-page:
+      material: ARROW
+      name: '&aNext Page'
+      lore:
+          - '&7Click to go to the next page'
+    previous-page:
+      material: ARROW
+      name: '&aPrevious Page'
+      lore:
+          - '&7Click to go to the previous page'
+    active:
+      material: BOOK_AND_QUILL
+      name: '&aActive Ban'
+      lore:
+          - '&7Reason: &c{reason}'
+          - '&7Banned by: &c{banned-by}'
+          - '&7Banned on: &c{banned-on}'
+          - '&7Expires on: &c{expires-on}'
+    expired:
+      material: BOOK
+      name: '&aExpired Ban'
+      lore:
+          - '&7Reason: &c{reason}'
+          - '&7Banned by: &c{banned-by}'
+          - '&7Banned on: &c{banned-on}'
+          - '&7Expired on: &c{expired-on}'
+    suspended:
+        material: BOOK
+        name: '&aSuspended Ban'
+        lore:
+            - '&7Reason: &c{reason}'
+            - '&7Banned by: &c{banned-by}'
+            - '&7Banned on: &c{banned-on}'
+            - '&7Expires on: &c{expires-on}'
+
+commands:
+  ban-usage: '&cUse /ban <player> <time> <reason>'
+  player-not-found: '&cPlayer not found.'
+  cannot-ban-yourself: '&cYou cannot ban yourself.'
+  player-already-banned: '&cPlayer is already banned.'
+  invalid-time: '&cInvalid time.'
+  reason-too-long: '&cReason too long.'
+  ban-success: '&aPlayer "{player}" banned.'
+  ban-kick: '&cYou have been banned by {author} for {time} for {reason}.'
+  unban-usage: '&cUse /unban <player>'
+  player-not-banned: '&cPlayer is not banned.'
+  unban-success: '&aPlayer "{player}" unbanned.'
+  history-usage: '&cUse /history <player>'
+
+kick-banned-message: '&cYou have been banned by {author} for {reason}.'
